@@ -937,7 +937,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'history') {
     $form->addAnything(__('Subject(s)'), $str_input);
     // biblio language
     // get language data related to this record from database
-    $lang_q = $dbs->query("SELECT language_id, language_name FROM mst_language");
+    $lang_q = $dbs->query("SELECT language_id, language_name FROM mst_language ORDER BY language_name ASC");
     $lang_options = array();
     while ($lang_d = $lang_q->fetch_row()) {
         $lang_options[] = array($lang_d[0], $lang_d[1]);
