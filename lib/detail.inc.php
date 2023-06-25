@@ -256,7 +256,7 @@ HTML;
           $location_name .= ' ('.$copy_d['site'].')';
         }
 
-        $call_number = empty($call_number) ? __('Location name is not set') : $call_number;
+        $call_number = empty($call_number) ? __('Call Number is not set') : $call_number;
         $_output .= <<<HTML
             <div class="w-100 flex flex-row w-full">
                 <div class="col-7 flex flex-row border border-gray-300 p-3">
